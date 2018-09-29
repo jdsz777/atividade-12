@@ -8,11 +8,11 @@ function formatar(mascara, documento) {
     }
 
 }
-function pessoajuridica() {
+function flex() {
     document.getElementById('tabela').style.display = 'none';
     document.getElementById('tabela2').style.display = 'block';
 }
-function pessoafisica() {
+function soloduo() {
     document.getElementById('tabela2').style.display = 'none';
     document.getElementById('tabela').style.display = 'block';
 }
