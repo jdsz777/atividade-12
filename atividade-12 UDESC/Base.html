@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>atividade-12</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
+  
     <link rel="stylesheet" href="css/atividade-12.css">
     <script src="js/formulario.js"></script>
 </head>
@@ -14,6 +14,71 @@
     <div class="center mt-4">
         <button type="button" class="btn btn-info" onclick="pessoafisica()">Pessoa Física</button>
         <button type="button" class="btn btn-dark" onclick="pessoajuridica()">Pessoa Juridica</button>
+    </div>
+    <h2 id="texto"></h2>
+    <div id="tabela">
+        <h5 class="center mt-4">Dados Pessoais</h5>
+        <table id="center123" width="301" height="160" border="0" cellspacing="0" class="tabela">
+            <tr>
+            </tr>
+            <tr>
+                <td width="32" height="24">Nome:</td>
+                <td width="265"><input type="text" name="data"></td>
+            </tr>
+            <tr>
+                <td height="24">Tel.:</td>
+                <td><input type="text" name="tel" maxlength="12" OnKeyPress="formatar('##-####-####', this)"></td>
+            </tr>
+            <tr>
+                <td height="24">Cep:</td>
+                <td><input type="text" name="cep" maxlength="9" OnKeyPress="formatar('#####-###', this)"></td>
+            </tr>
+            <tr>
+                <td height="24">CPF:</td>
+                <td><input type="text" name="cpf" maxlength="14" OnKeyPress="formatar('###.###.###-##', this)"></td>
+            </tr>
+            <tr>
+                <td height="24">Rg:</td>
+                <td><input type="text" name="rg" maxlength="12" OnKeyPress="formatar('##.###.###-#', this)"></td>
+            </tr>
+            <tr>
+                <td height="24">Email:</td>
+                <td><input type="email" name="email"></td>
+            </tr>
+        </table>
+        <div class="enviar">
+            <button class="center mt-4" onclick="enviar()">Enviar</button>
+        </div>
+    </div>
+    <div id="tabela2">
+        <h5 class="center mt-4">Dados Da Empresa:</h5>
+        <table id="center123" width="301" height="160" border="0" cellspacing="0" class="tabela">
+            <tr>
+            </tr>
+            <tr>
+                <td width="32" height="24">Empresa:</td>
+                <td width="265"><input type="text" name="data"></td>
+            </tr>
+            <tr>
+                <td height="24">Tel.:</td>
+                <td><input type="text" name="tel" maxlength="12" OnKeyPress="formatar('##-####-####', this)"></td>
+            </tr>
+            <tr>
+                <td height="24">Cep:</td>
+                <td><input type="text" name="cep" maxlength="9" OnKeyPress="formatar('#####-###', this)"></td>
+            </tr>
+            <tr>
+                <td height="24">CNPJ:</td>
+                <td><input type="text" name="cnpj" maxlength="18" OnKeyPress="formatar('##.###.###/####-##', this)"></td>
+            </tr>
+            <tr>
+                <td height="24">Email:</td>
+                <td><input type="email" name="email"></td> 
+            </tr>
+        </table>
+        <div class="enviar">
+            <button class="center mt-4" onclick="enviar()">Enviar</button>
+        </div>
     </div>
 </body>
 </html>

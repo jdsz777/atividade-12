@@ -1,7 +1,43 @@
-body{
-    background-color: blue;
-}
-#titulo{
-    color: yellow;
+.center {
     text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+body {
+    background-image: url(http://getwallpapers.com/wallpaper/full/0/8/a/642770.jpg);
+    background-attachment: fixed;
+    background-size: 100%;
+    
+    }
+
+#titulo{
+    color: white;
+    text-align: center;
+}
+
+.enviar {
+    text-align: center;
+margin-right: auto;
+margin-left: auto;
+}
+
+#center123 {
+text-align: center;
+margin-right: auto;
+margin-left: auto;
+}
+
+#tabela {
+   display: block;
+   color: white;
+}
+
+#tabela2 {
+   display: none;
+   color: white;
+}
+
+#texto {
+   text-align: center;
 }

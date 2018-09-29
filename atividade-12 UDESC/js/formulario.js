@@ -1,28 +1,23 @@
 function formatar(mascara, documento) {
-    var i= document.value.lenght;
+    var i = documento.value.length;
     var saida = mascara.substring(0, 1);
-    var texto = mascara.substring(i);
+    var texto = mascara.substring(i)
 
-    if (texto.substring(0, 1) !- saida){
-        document.value += texto.substring(0 ,1);
-    } 
+    if (texto.substring(0, 1) != saida) {
+        documento.value += texto.substring(0, 1);
+    }
+
 }
-
-function pessoafisica() {
-    document.getElementById('').style.display = 'none';
-    document.getElementById('').style.display = 'block';
-    document.getElementById('').style.color = 'yellow';
-}
-
 function pessoajuridica() {
-    document.getElementById('').style.display = 'none';
-    document.getElementById('').style.display = 'block';
-    document.getElementById('').style.color = 'yellow';
+    document.getElementById('tabela').style.display = 'none';
+    document.getElementById('tabela2').style.display = 'block';
 }
-
+function pessoafisica() {
+    document.getElementById('tabela2').style.display = 'none';
+    document.getElementById('tabela').style.display = 'block';
+}
 function enviar() {
-    document.getElementById('').style.display = 'none';
-    document.getElementById('').style.display = 'none';
-    document.getElementById('').style.display = 'none';
-    document.getElementById('').style.color = 'black';
+    document.getElementById('tabela2').style.display = 'none';
+    document.getElementById('tabela').style.display = 'none';
+    document.getElementById('enviar').style.display = 'none';
 }
